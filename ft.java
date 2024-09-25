@@ -4,9 +4,7 @@ public class ft {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        // Выводим сообщение для пользователя
-        System.out.println("Простой калькулятор");
+        System.out.println("Приветствую, вы можете выполнить математическую операцию с любыми двумя числами");
         System.out.print("Введите первое число: ");
         double num1 = scanner.nextDouble();
 
@@ -18,7 +16,6 @@ public class ft {
 
         double result;
 
-        // Выполняем операцию в зависимости от введённого оператора
         switch (operator) {
             case '+':
                 result = num1 + num2;
@@ -41,8 +38,6 @@ public class ft {
                 System.out.println("Ошибка: неверный оператор!");
                 return;
         }
-
-        // Выводим результат
         System.out.println("Результат: " + result);
     }
 }
